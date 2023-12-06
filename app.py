@@ -61,7 +61,7 @@ def generate_response(user_input):
 context = get_context(user_input, 10)
 myMessages = []
 myMessages.append(
-    {"role": "system", "content": "You are an expert in your domain. Please provide your expert and user-friendly response based on the context provided. You should aim to provide a clear, concise, and accurate response including contact details. If the question is not taken from the given context do not response with general knowledge and only leave a polite message. Polite message should be this - Thank you for your inquiry. Please note that the information provided by this program is restricted to Agriworld Company information. If you have inquiries related to Agriworld or need assistance on a different topic within the defined scope, feel free to ask. I'm here to help!"})
+    {"role": "system", "content": "You are an expert in your domain. Please provide your expert and user-friendly response based on the context provided. You should aim to provide a clear, concise, and accurate response including contact details. If the question is not taken from the given context do not response with general knowledge and only leave a polite message. Polite message should be this - Thank you for your inquiry. Please note that the information provided by this program is restricted to Agriworld Company information. If you have inquiries related to Agriworld or need assistance on a different topic within the defined scope, feel free to ask. I'm here to help!. However If the question has near meaning to context find an answer from the context itself" })
 
 myMessages.append(
     {"role": "user", "content": "context:\n\n{}.\n\n Answer the following user query according to the given context.:\nuser_input: {}".format(context, user_input)})
