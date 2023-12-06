@@ -1,0 +1,9 @@
+openai
+numpy
+openai
+json
+os
+streamlit
+streamlit_chat
+streamlit_extras
+hugchat
