@@ -5,3 +5,4 @@ streamlit
 streamlit_chat
 streamlit_extras
 hugchat
+scikit-learn
